@@ -11,107 +11,117 @@
 				<li class = "user-sidebar__item"><a href="">О себе</a></li>
 			</ul>
 			
-			<div class="accordeon-container">
-				<div class="accordeon">
-				<a href="#"  class ="accordeon__item active">
-					<span>Сведения о беременности</span>
-				</a>
-				<div class="user-panel active">
-					<div class="form-row">
-						<label for="" class = "lab">Имя</label>
-						<input type="text" class = "input blue-focus in-cabinet">
-					</div>
-					<div class="form-row">
-						<label for="" class = "lab">Имя</label>
-						<select name="" class = "input in-cabinet invert blue-focus" id="">
-							<option value="test">test</option>
-						</select>
-					</div>
-					<div class="form-row with-select">
-							<label for="day" class="lab">Дата рождения</label>
-							<div class="select-row">
-								<select name="day" id="day" class = "input day blue-focus">
-									<option value="1">01</option>
-									<option value="2">02</option>
-								</select>
-								<select name="week" id="week" class = "input week blue-focus">
-									<option value="1">Январь</option>
-									<option value="2">Февраль</option>
-								</select>
-								<select name="year" id="year" class = "input year blue-focus">
-									<option value="1">1993</option>
-									<option value="2">1992</option>
-								</select>
-							</div>
-						</div>
-				</div>
-				<a href="#" class ="accordeon__item">
-					<span>Сведения о родильнице и малыше </span>
-				</a>
-				<div class="user-panel">
-					<div class="form-row">
-						<label for="" class = "lab">Имя</label>
-						<input type="text" class = "input blue-focus in-cabinet">
-					</div>
-					<div class="form-row">
-						<label for="" class = "lab">Имя</label>
-						<select name="" class = "input in-cabinet invert blue-focus" id="">
-							<option value="test">test</option>
-						</select>
-					</div>
-					<div class="form-row with-select">
-							<label for="day" class="lab">Дата рождения</label>
-							<div class="select-row">
-								<select name="day" id="day" class = "input day blue-focus">
-									<option value="1">01</option>
-									<option value="2">02</option>
-								</select>
-								<select name="week" id="week" class = "input week blue-focus">
-									<option value="1">Январь</option>
-									<option value="2">Февраль</option>
-								</select>
-								<select name="year" id="year" class = "input year blue-focus">
-									<option value="1">1993</option>
-									<option value="2">1992</option>
-								</select>
-							</div>
-						</div>
-				</div>
-				<a href="#" class ="accordeon__item">
-					<span>Сведения о ребёнке</span>
-				</a>
-				<div class="user-panel">
-					<div class="form-row">
-						<label for="" class = "lab">Имя</label>
-						<input type="text" class = "input blue-focus in-cabinet">
-					</div>
-					<div class="form-row">
-						<label for="" class = "lab">Имя</label>
-						<select name="" class = "input in-cabinet invert blue-focus" id="">
-							<option value="test">test</option>
-						</select>
-					</div>
-					<div class="form-row with-select">
-							<label for="day" class="lab">Дата рождения</label>
-							<div class="select-row">
-								<select name="day" id="day" class = "input day blue-focus">
-									<option value="1">01</option>
-									<option value="2">02</option>
-								</select>
-								<select name="week" id="week" class = "input week blue-focus">
-									<option value="1">Январь</option>
-									<option value="2">Февраль</option>
-								</select>
-								<select name="year" id="year" class = "input year blue-focus">
-									<option value="1">1993</option>
-									<option value="2">1992</option>
-								</select>
-							</div>
-						</div>
+
+			<div class="user-panel">
+				<div class="form-row with-counter flex-start">
+					<label class = "lab" for="test">Сколько у вас детей?</label>
+					<input type="number" id = "child-count" value = "1" disabled class = "input counter">
+					<a id = "child-add" class = "button pink">Добавить ребенка</a>
 				</div>
 			</div>
+	<!-- 		<div class="accordeon-container">
+		<div class="accordeon">
+		<a href="#"  class ="accordeon__item active">
+			<span>Сведения о беременности</span>
+		</a>
+		<div class="user-panel active">
+			<div class="form-row">
+				<label for="" class = "lab">Имя</label>
+				<input type="text" class = "input blue-focus in-cabinet">
+			</div>
+			<div class="form-row">
+				<label for="" class = "lab">Имя</label>
+				<select name="" class = "input in-cabinet invert blue-focus" id="">
+					<option value="test">test</option>
+				</select>
+			</div>
+			<div class="form-row with-select">
+					<label for="day" class="lab">Дата рождения</label>
+					<div class="select-row">
+						<select name="day" id="day" class = "input day blue-focus">
+							<option value="1">01</option>
+							<option value="2">02</option>
+						</select>
+						<select name="week" id="week" class = "input week blue-focus">
+							<option value="1">Январь</option>
+							<option value="2">Февраль</option>
+						</select>
+						<select name="year" id="year" class = "input year blue-focus">
+							<option value="1">1993</option>
+							<option value="2">1992</option>
+						</select>
+					</div>
+				</div>
+		</div>
+		<a href="#" class ="accordeon__item">
+			<span>Сведения о родильнице и малыше </span>
+		</a>
+		<div class="user-panel">
+			<div class="form-row">
+				<label for="" class = "lab">Имя</label>
+				<input type="text" class = "input blue-focus in-cabinet">
+			</div>
+			<div class="form-row">
+				<label for="" class = "lab">Имя</label>
+				<select name="" class = "input in-cabinet invert blue-focus" id="">
+					<option value="test">test</option>
+				</select>
+			</div>
+			<div class="form-row with-select">
+					<label for="day" class="lab">Дата рождения</label>
+					<div class="select-row">
+						<select name="day" id="day" class = "input day blue-focus">
+							<option value="1">01</option>
+							<option value="2">02</option>
+						</select>
+						<select name="week" id="week" class = "input week blue-focus">
+							<option value="1">Январь</option>
+							<option value="2">Февраль</option>
+						</select>
+						<select name="year" id="year" class = "input year blue-focus">
+							<option value="1">1993</option>
+							<option value="2">1992</option>
+						</select>
+					</div>
+				</div>
+		</div>
+		<a href="#" class ="accordeon__item">
+			<span>Сведения о ребёнке</span>
+		</a>
+		<div class="user-panel">
+			<div class="form-row">
+				<label for="" class = "lab">Имя</label>
+				<input type="text" class = "input blue-focus in-cabinet">
+			</div>
+			<div class="form-row">
+				<label for="" class = "lab">Имя</label>
+				<select name="" class = "input in-cabinet invert blue-focus" id="">
+					<option value="test">test</option>
+				</select>
+			</div>
+			<div class="form-row with-select">
+					<label for="day" class="lab">Дата рождения</label>
+					<div class="select-row">
+						<select name="day" id="day" class = "input day blue-focus">
+							<option value="1">01</option>
+							<option value="2">02</option>
+						</select>
+						<select name="week" id="week" class = "input week blue-focus">
+							<option value="1">Январь</option>
+							<option value="2">Февраль</option>
+						</select>
+						<select name="year" id="year" class = "input year blue-focus">
+							<option value="1">1993</option>
+							<option value="2">1992</option>
+						</select>
+					</div>
+				</div>
+		</div>
+	</div>
+</div>
+-->
 				
-			</div>
+			
 		</div>
 	</div>
 </main>

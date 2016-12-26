@@ -162,6 +162,16 @@ label{
 		border:1px solid red;
 		margin-bottom: 8px;
 	}
+	&.counter{
+		background: none;
+		border: none;
+		box-shadow: none;
+		padding: 0;
+		width: auto;
+		max-width: 45px;
+		margin-left: 22px;
+		border-radius: 0;
+	}
 	&.disabled{
 		background-color:#abb9bf !important;
 		cursor: not-allowed
@@ -299,12 +309,19 @@ label{
 		margin-top: 47px;
 		margin-bottom: 38px;
 	}
+	&.with-counter{
+		.button{
+			width: auto;
+  			padding: 15.5px 30px;
+		}
+	}
 	&.flex-start{
 		justify-content: flex-start;
 	}
 	&.flex-center{
 		justify-content: center;
 	}
+
 	label{
 		&.error{
 			position: absolute;
@@ -2043,7 +2060,7 @@ label{
 /*  ADMIN PANEL  */
 
 .admin{
-	
+
 	padding-bottom: 50px;
 }
 

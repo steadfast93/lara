@@ -37,6 +37,12 @@ $('.step-1 .registration__next-step .button').click(function () {
 
 
 
+$('#child-add').click(function(event) {
+	var value = +($('#child-count').val());
+	$('#child-count').val(++value);
+});
+
+
 
 $(document).ready(function() {
 /*	$('.step-1 .registration__next-step .button').click(function(event) {
