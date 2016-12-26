@@ -1,0 +1,85 @@
+//= template/head-log.html
+
+
+<div class="contacts page-bg">
+	<div class="container">
+		<div class="contacts__container">
+			<h1 class = "page-title">Контакты</h1>
+			<div class="contacts__row">
+				<div class="contacts__item-container">
+					<a class = "contacts__item phone" href="tel:+38 (044) 39 48 781"></a><span>+38 (044) 39 48 781 </span>
+				</div>
+				<div class="contacts__item-container">
+					<a class = "contacts__item phone" href="tel:+7 (499) 40 40 815"></a><span>+7 (499) 40 40 815</span>
+				</div>
+				<div class="contacts__item-container">
+					<a class = "contacts__item skype" href="skype:life_diet"></a><span>life_diet</span>
+				</div>
+				<div class="contacts__item-container">
+					<div class = "contacts__item location"></div><span>г. Днепр, ул. В. Мономаха</span>
+				</div>
+				<div class="contacts__item-container">
+					<a class = "contacts__item email" href="mailto:ls_manager@gmail.com"></a><span>ls_manager@gmail.com</span>
+				</div>
+
+			</div>
+
+			<div class="contacts__form">
+				<div class="contacts__form-title">
+					Напишите нам
+				</div>
+				<form action="#" class = "contacts__form-container">
+					<div class="form-row">
+						<input type="text" class = "input in-cabinet blue-focus" placeholder = "Имя">
+					</div>
+					<div class="form-row">
+						<input type="text" class = "input in-cabinet blue-focus" placeholder = "Email">
+					</div>
+					<div class="form-row">
+						<input type="text" class = "input in-cabinet blue-focus" placeholder = "Телефон">
+					</div>
+					<div class="form-row">
+						<textarea class = "input in-cabinet blue-focus textarea" placeholder = "Расскажите о себе..."></textarea>
+					</div>
+					<div class="form-row flex-center">
+						<input type="submit" class = "button pink">
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="contacts__map">
+		
+		<div id="map">
+			
+		</div>
+	</div>
+
+
+</div>
+
+
+<script>
+var map;
+function initMap() {
+	  map = new google.maps.Map(document.getElementById('map'), {
+	    center: {lat: 48.46925086, lng: 35.04383733},
+	    zoom: 17,
+	    scrollwheel: false,
+	    styles: [{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#444444"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#f2f2f2"}]},{"featureType":"poi","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"all","stylers":[{"saturation":-100},{"lightness":45}]},{"featureType":"road.highway","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#6a95db"},{"visibility":"on"}]}]
+	  });
+
+	  var marker = new google.maps.Marker({
+	    position: {lat: 48.46925086, lng: 35.04683733},
+	    icon: "img/marker.png",
+	    map: map,
+	    
+	  });
+	}
+</script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCyLDCqg4lxDl4k655oSoFbNxXT8MXrEg&callback=initMap"
+  type="text/javascript"></script>
+
+//= template/footer.html

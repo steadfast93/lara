@@ -1,0 +1,156 @@
+//= template/head.html
+<div class="registration">
+	<div class="container">
+		<h2 class = "title">Регистрация в личном кабинете</h2>
+		<form class="registration__form" role = "form" >
+		 <div class="registration__step step-1">
+				<div class="registration__step-text">
+					<span class="bold">Шаг 1</span>
+					<span>из 3-х</span>
+				</div>
+				<div class="registration__main-container">
+					<span class="registration__describe-text">
+						Пожалуйста, введите логин и пароль:
+					</span>
+					<div class="form-row">
+						<label class = "lab" for="login">Логин</label>
+						<input  name = "login"  id = "login" class = "input blue-focus"  placeholder = "Введите логин" >
+					</div>
+					<div class="form-row">
+						<label class = "lab" for="login">Пароль</label>
+						<input name = "password" type="text" id = "password" class = "input blue-focus" placeholder = "Пароль">
+					</div>
+					<div class="form-row">
+						<label class = "lab" for="login">Повторите пароль</label>
+						<input type="text" id = "login" class = "input blue-focus" placeholder = "Повторите пароль">
+					</div>
+			
+					<span class="registration__describe-text top-margin">
+						Пожалуйста, введите Ваши персональные данные:
+					</span>
+					<div class="form-row">
+						<label class = "lab" for="login">Имя</label>
+						<input type="text" id = "login" class = "input blue-focus" placeholder = "Введите имя">
+					</div>
+					<div class="form-row">
+						<label class = "lab" for="login">Фамилия</label>
+						<input type="text" id = "login" class = "input blue-focus" placeholder = "Введите фамилию">
+					</div>
+					<div class="form-row">
+						<label class = "lab" for="login">Отчество</label>
+						<input type="text" id = "login" class = "input blue-focus" placeholder = "Введите отчество">
+					</div>
+					<div class="form-row">
+						<label for="day" class="lab">Дата рождения</label>
+						<div class="select-row">
+							<select name="day" id="day" class = "input day blue-focus">
+								<option value="1">01</option>
+								<option value="2">02</option>
+							</select>
+							<select name="week" id="week" class = "input week blue-focus">
+								<option value="1">Январь</option>
+								<option value="2">Февраль</option>
+							</select>
+							<select name="year" id="year" class = "input year blue-focus">
+								<option value="1">1993</option>
+								<option value="2">1992</option>
+							</select>
+						</div>
+					</div>
+					<span class="registration__attention-text pull-right">Все поля обязательны для заполнения</span>
+					<div class="registration__next-step pull-right">
+						<div class="button blue">Далее</div>
+					</div>
+				</div>
+			</div>
+			<div class="registration__step step-2">
+				<div class="registration__step-text">
+					<span class="bold">Шаг 2</span>
+					<span>из 3-х</span>
+				</div>
+				<div class="registration__back-step">
+					<div class="button gray-blue">Назад</div>
+				</div>
+				<div class="registration__main-container">
+					<span class="registration__describe-text">
+						Для отправки Вам нашего подарка, заполните пожалуйста
+						анкету и введите Ваши настоящие данные:
+					</span>
+					<div class="form-row">
+						<label class = "lab" for="login">Логин</label>
+						<input type="text" id = "login" class = "input blue-focus" placeholder = "Введите  логин">
+					</div>
+					<div class="form-row">
+						<label class = "lab" for="login">Пароль</label>
+						<select name="country" id="country" class = "input">
+							<option value="Украина">Украина</option>
+						</select>
+					</div>
+					<div class="form-row">
+						<label class = "lab" for="login">Повторите пароль</label>
+						<input type="text" id = "login" class = "input blue-focus" placeholder = "Повторите пароль">
+					</div>
+					<div class="form-row">
+						<label class = "lab" for="login">Дом</label>
+						<input type="text" id = "login" class = "input little blue-focus" placeholder = "№">
+						<label class = "lab little" for="login">Квартира</label>
+						<input type="text" id = "login" class = "input little blue-focus" placeholder = "№">
+					</div>
+			
+					
+					<span class="registration__attention-text pull-right">Все поля обязательны для заполнения</span>
+					<div class="registration__next-step pull-right">
+						<div class="button blue">Далее</div>
+					</div>
+				</div>
+			</div> 
+			<div class="registration__step step-3">
+				<div class="registration__step-text">
+					<span class="bold">Шаг 3</span>
+					<span>из 3-х</span>
+				</div>
+				<div class="registration__back-step">
+					<div class="button gray-blue">Назад</div>
+				</div>
+				<div class="registration__main-container">
+					<span class="registration__describe-text">
+						Расскажите немного о себе:
+					</span>
+					<div class="form-row">
+						<label class = "lab" for="login">Фото</label>
+						<div class="input-file">
+							<label class = "input" for="photo-upload">
+								<span>Загрузить своё фото</span>
+									<div class="button blue">Выбрать</div>
+							</label>
+							<input type="file" id = "photo-upload">
+						</div>
+					</div>
+					<div class="form-row with-textarea">
+						<label class = "lab" for="login">О себе</label>
+						<textarea  class="input textarea" placeholder = "О Вас"></textarea>
+					</div>
+					<div class="form-row with-radio ">
+						<label class = "lab" for="login">Повторите пароль</label>
+						<div class="input-radio">
+							<input type="radio" name = "has_child" checked = "checked" id = "rad1">
+							<label for="rad1"><span>Да</span></label>
+						</div>
+						<div class="input-radio"> 
+							<input type="radio" name = "has_child" id = "rad2">
+							<label for="rad2"><span>Нет</span></label>
+						</div>
+					</div>	
+				</div>
+				
+				<div class="registration__finish">
+						<input type = "button" class="button blue" value = "Пропустить">
+						<input type = "button" class="button pink" value = "Завершить регистрацию">
+				</div>
+
+
+			</div>
+		</form>
+	</div>
+</div>
+//= template/footer.html

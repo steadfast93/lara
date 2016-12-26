@@ -1,0 +1,10 @@
+@import "bourbon/bourbon";
+
+
+@include font-face("raleway-reg", "../fonts/Raleway-Regular", normal, $file-formats: woff);
+@include font-face("raleway-med", "../fonts/Raleway-Medium", normal, $file-formats: woff);
+@include font-face("raleway-black", "../fonts/Raleway-Black", normal, $file-formats: woff);
+@include font-face("raleway-bold", "../fonts/Raleway-Bold", normal, $file-formats: woff);
+@include font-face("raleway-semibold", "../fonts/Raleway-SemiBold", normal, $file-formats: woff);
+@include font-face("intro-bold", "../fonts/Intro-Bold", normal, $file-formats: woff);
+

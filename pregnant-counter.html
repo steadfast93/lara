@@ -1,0 +1,73 @@
+//= template/head-log.html
+
+<main class = "cabinet page-bg big-pattern">
+	<div class="container">
+		<div class="cabinet__container">
+			<ul class="user-sidebar">
+				<li class = "user-sidebar__item active"><a href="">Персональные данные</a></li>
+				<li class = "user-sidebar__item"><a href="">Контактные данные</a></li>
+				<li class = "user-sidebar__item"><a href="">Моя беременность</a></li>
+				<li class = "user-sidebar__item"><a href="">Карта беременной</a></li>
+				<li class = "user-sidebar__item"><a href="">О себе</a></li>
+			</ul>
+			
+			<div class="user-panel preg-counter">
+				<h2>Счётчик беременности</h2>
+				<a href="#preg-counter-popup" class ="button blue popup-toggle">Изменить</a>
+				<div class="preg-counter__block">
+					Вы на
+					<div class="preg-counter__spend">
+						<span class="preg-counter__number">4</span> -й неделе
+					</div>
+				</div>
+				<div class="preg-counter__block">
+					До родов осталось:
+					<div class="preg-counter__rest">
+						<span class="preg-counter__number">36</span> недель
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</main>
+
+
+
+
+<div id = "preg-counter-popup" class="popup-content preg-counter-popup mfp-hide">
+	Укажите первый день последней менструации:
+	<div class="form-row">
+		<div class="select-row">
+			<select name="test" id="1" class = "input day">
+				<option value="1">1</option>
+				<option value="1">1</option>
+				<option value="1">1</option>
+			</select>
+			<select name="test" id="1" class = "input week">
+				<option value="1">1</option>
+				<option value="1">1</option>
+				<option value="1">1</option>
+			</select>
+			<select name="test" id="1" class = "input year">
+				<option value="1">1</option>
+				<option value="1">1</option>
+				<option value="1">1</option>
+			</select>
+		</div>
+	</div>
+	<div class="popup-button">
+		<div class="button blue">Рассчитать</div>
+	</div>
+	<div class="preg-counter-popup__data">
+		<span><span class="equal">=</span>0</span>месяцев
+	</div>
+	<div class="popup-button">
+		<a class = "button pink">Сохранить</a>
+	</div>
+	
+	
+</div>
+
+
+//= template/footer.html
