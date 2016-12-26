@@ -37,10 +37,105 @@ $('.step-1 .registration__next-step .button').click(function () {
 
 
 
+//* YEAR SELECT OPTIONS
+
+function createYearSelectOptions(start){
+
+	var result = ''
+	var date = new Date();
+	var i = start || 1970;
+
+	result += '<option value = "' + i + '" selected = "selected">' + i +'</option>';
+
+	for(i+1; i <= date.getFullYear(); i++) {
+		result += '<option value = "' + i + '">' + i +'</option>';
+	}
+
+	return result;
+}
+
+
+//* CHILDREN DELETE CABINET
+
+function deleteChild(obj){
+	$(obj).closest('.child').remove();
+	$('#child-count').val(childCount-=1);
+};
+
+
+$('.delete-child').click(function(event){
+	deleteChild(this);
+})
+
+
+
+//* CHILDREN ADD CABINET
+
+var childId = +($('#child-count').val());
+var childCount = +($('#child-count').val());
+var childrenPattern = '';
+
+
+
 $('#child-add').click(function(event) {
-	var value = +($('#child-count').val());
-	$('#child-count').val(++value);
+	
+	$('#child-count').val(childCount+=1);
+	
+	childId++;
+
+	childrenPattern = 
+
+	'<div class="child child' + childId + '">' +
+        '<div class="form-row with-radio">' +
+            '<label class = "lab">Выберите пол</label>' +
+            '<div class="input-radio">' +
+                '<input type="radio" name = "ch' + childId + '_sex" value = "1" id = "ch' + childId + '_1">' +
+                '<label for="ch' + childId + '_1"><span>Мальчик</span></label>' +
+            '</div>' +
+            '<div class="input-radio">' +
+                '<input type="radio" name = "ch' + childId + '_sex" value = "2" id = "ch' + childId + '_2">' +
+                '<label for="ch' + childId + '_2"><span>Девочка</span></label>' +
+            '</div>' +
+        '</div>' +
+        '<div class="form-row">' +
+            '<label for="ch' + childId + '_name" class = "lab">Имя</label>' +
+            '<input  type="text" class="input blue-focus in-cabinet" name="ch' + childId + '_name" id="ch' + childId + '_name" placeholder="Введите имя ребенка">' +
+        '</div>' +
+        '<div class="form-row flex-start">' +
+           	'<label for="ch' + childId + '_year" class = "lab">Дата рождения</label>' +
+            '<div class="select-row full-width">'  +
+				'<select name="ch' + childId + '_year" id = "ch' + childId + '_year" class = "input blue-focus in-cabinet invert year" value = "1970">' +
+					createYearSelectOptions() +
+				'</select>' +
+				'<a onclick = "deleteChild(this)" class="button pink delete-child">Удалить</a>' +
+            '</div>' +
+        '</div>' +
+  '</div>';
+
+  
+  $('#child-container').append(childrenPattern);
+
+
+
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

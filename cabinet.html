@@ -18,6 +18,35 @@
 					<input type="number" id = "child-count" value = "1" disabled class = "input counter">
 					<a id = "child-add" class = "button pink">Добавить ребенка</a>
 				</div>
+				 <div class="children" id = "child-container">
+				 	
+	                  <div class="child child1 new">
+	                        <div class="form-row with-radio">
+	                            <label class = "lab">Выберите пол</label>
+	                            <div class="input-radio">
+	                                <input type="radio" name = "ch1_sex" value = "1" id = "ch1_1">
+	                                <label for="ch1_1"><span>Мальчик</span></label>
+	                            </div>
+	                            <div class="input-radio"> 
+	                                <input type="radio" name = "ch1_sex" value = "2" id = "ch1_2">
+	                                <label for="ch1_2"><span>Девочка</span></label>
+	                            </div>
+	                        </div>
+	                        <div class="form-row">
+	                            <label for="ch1_name" class = "lab">Имя</label>
+	                            <input  type="text" class="input blue-focus in-cabinet" name="ch1_name" placeholder="Введите имя ребенка">
+	                        </div>
+	                        <div class="form-row flex-start">
+	                           	<label for="ch1_year" class = "lab">Дата рождения</label>
+	                            <div class="select-row full-width"> 
+									<select name="ch1_year" class = "input blue-focus in-cabinet invert year" value = "1970">
+										<option value="1970">1970</option>
+									</select>
+									<a href="#" class="button pink delete-child">Удалить</a>
+	                            </div>
+	                        </div>
+	                  </div>
+				 </div>
 			</div>
 	<!-- 		<div class="accordeon-container">
 		<div class="accordeon">

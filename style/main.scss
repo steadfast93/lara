@@ -488,6 +488,12 @@ label{
 	}
 	.select-row{
 		width: 475px;
+		&.full-width{
+			width: 653px; 
+			.button{
+				width: 150px;
+			}
+		}
 		.input{
 			padding-left: 32px;
 			&.day{
