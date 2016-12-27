@@ -14,6 +14,21 @@
 //= partials/jquery.jscrollpane.min.js
 
 
+/*var i = 1;
+
+function blink(){
+	
+	i = i==5 ? 1 : i;
+	
+	$('.animation span').hide();
+	$('.animation span#a'+i).show();
+	i+=1;
+}
+
+var animation = setInterval(blink, 300);*/
+
+
+
 var registerValidate = $('.registration__form').validate({
 		rules:{
 			login: {
@@ -121,10 +136,20 @@ $('#child-add').click(function(event) {
 
 
 
+//* ADMIN MODERATE TABS
 
 
 
 
+
+
+$('.admin__tabs-container .admin__tabs a').click(function(event) {
+	var data = $(this).data('tab');
+	$('.admin__tabs a.active').removeClass('active');
+	$(this).addClass('active');
+	$('.admin__tab-block.active').removeClass('active');
+	$('.admin__tab-block[data-tab = "'+data+'"]').addClass('active');
+});
 
 
 
@@ -140,6 +165,8 @@ $('#child-add').click(function(event) {
 
 
 $(document).ready(function() {
+
+
 /*	$('.step-1 .registration__next-step .button').click(function(event) {
 		$('.step-1').hide();
 		$('.step-2').show();
